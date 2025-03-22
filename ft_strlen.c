@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yohatana <yohatana@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: yohatana <yohatana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 16:50:03 by yohatana          #+#    #+#             */
-/*   Updated: 2024/04/26 19:03:05 by yohatana         ###   ########.fr       */
+/*   Updated: 2025/03/22 18:27:32 by yohatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
+	if (s == NULL)
+		return (0);
 	i = 0;
 	while (s[i] != 0)
 	{
